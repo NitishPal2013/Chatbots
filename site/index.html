@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botterra - Your Chatbot Solution</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+  background-color: #000;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Main Styles */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main #about, #services, #testimonials, #why-choose,#contact{
+    color: #1a1a1a;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  border-left: 4px solid #3498db;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#image{
+    border-radius: 100%;
+    width: 25%;
+    animation: fadeIn 2s ease-in;
+}
+
+#details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail, #insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 700px) {
+  #details {
+    flex-wrap: wrap;
+  }
+}
+
+#why-chatbots{
+    animation: fadeIn 2s ease-in;
+}
+
+</style>
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/c481034d-c736-4aa7-8cbc-6b6b7661ba16/webchat/config.js" defer></script>
+<body>
+  <header class="header">
+    <img id="image" src="./Bottera.png" alt="Bottera_Logo">
+    <div class="header-content">
+      <h1 class="header-title">Welcome to Botterra</h1>
+      <h2 class="header-subtitle">Your Chatbot Solution</h2>
+      <p class="header-description">Elevate Your Business with Powerful AI Chatbots</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Botterra, we are dedicated to providing cutting-edge chatbot solutions to businesses of all sizes. Our team of AI
+          experts creates intelligent chatbots tailored to your specific industry and requirements. With a focus on innovation and
+          user experience, we help businesses enhance customer interactions.</p>
+      </section>
+    
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Custom Chatbot Development</li>
+          <li>AI-Powered Virtual Assistants</li>
+          <li>Chatbot Integration</li>
+          <li>Natural Language Processing</li>
+        </ul>
+      </section>
+    
+      <section id="why-choose">
+        <h2>Why Choose Botterra?</h2>
+        <ul>
+          <li>Expertise: Our team comprises skilled AI professionals with extensive experience in chatbot development.</li>
+          <li>Tailored Solutions: We understand your unique needs and deliver personalized chatbot solutions.</li>
+          <li>Customer-Centric: Your satisfaction is our priority, and we constantly strive to exceed your expectations.</li>
+          <li>Innovation: We stay at the forefront of AI technology, delivering innovative chatbot experiences.</li>
+        </ul>
+      </section>
+    
+      <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <blockquote>
+          <p>"Botterra's chatbot significantly improved our customer response time and engagement." - Business Owner A</p>
+        </blockquote>
+        <blockquote>
+          <p>"The virtual assistant provided by Botterra has revolutionized our daily operations." - Business Owner B</p>
+        </blockquote>
+        <blockquote>
+          <p>"Botterra's chatbot integration enhanced our website's user experience and conversion rates." - Business Owner C</p>
+        </blockquote>
+      </section>
+    
+      <section id="why-chatbots">
+        <h2>Why Business Should Use Chatbots</h2>
+        <p>Chatbots have become an indispensable tool for businesses across various industries. Here's why you should consider integrating chatbots into your business:</p>
+        <ul>
+          <li>24/7 Availability: Chatbots provide round-the-clock customer support, ensuring your customers' queries are addressed anytime, anywhere.</li>
+          <li>Instant Responses: With chatbots, customers receive instant responses to their questions, improving overall customer satisfaction.</li>
+          <li>Cost-Effective: Implementing chatbots reduces the need for extensive human support, leading to cost savings in the long run.</li>
+          <li>Efficient Task Automation: Chatbots can handle repetitive tasks, such as answering FAQs or processing orders, freeing up your team to focus on more strategic activities.</li>
+          <li>Personalized Interactions: Advanced chatbots with NLP capabilities can engage customers in natural, personalized conversations, enhancing the user experience.</li>
+          <li>Data Insights: Chatbots gather valuable data on customer preferences and behavior, providing valuable insights for targeted marketing and product improvements.</li>
+          <li>Scalability: Chatbots can handle multiple conversations simultaneously, making them scalable to meet the growing demands of your business.</li>
+          <li>Competitive Advantage: Integrating chatbots showcases your commitment to innovative technology and gives you a competitive edge in the market.</li>
+        </ul>
+      </section>
+    
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to elevate your business with an AI-powered chatbot? Contact us today for a consultation.</p>
+        <div id = "details">
+            <div id="mail">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="5%" height="5%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z" fill="#f7f7f7"/>
+            <path d="M22.0515 8.52295L16.0644 13.1954L9.94043 8.52295V8.52421L9.94783 8.53053V15.0732L15.9954 19.8466L22.0515 15.2575V8.52295Z" fill="#EA4335"/>
+            <path d="M23.6231 7.38639L22.0508 8.52292V15.2575L26.9983 11.459V9.17074C26.9983 9.17074 26.3978 5.90258 23.6231 7.38639Z" fill="#FBBC05"/>
+            <path d="M22.0508 15.2575V23.9924H25.8428C25.8428 23.9924 26.9219 23.8813 26.9995 22.6513V11.459L22.0508 15.2575Z" fill="#34A853"/>
+            <path d="M9.94811 24.0001V15.0732L9.94043 15.0669L9.94811 24.0001Z" fill="#C5221F"/>
+            <path d="M9.94014 8.52404L8.37646 7.39382C5.60179 5.91001 5 9.17692 5 9.17692V11.4651L9.94014 15.0667V8.52404Z" fill="#C5221F"/>
+            <path d="M9.94043 8.52441V15.0671L9.94811 15.0734V8.53073L9.94043 8.52441Z" fill="#C5221F"/>
+            <path d="M5 11.4668V22.6591C5.07646 23.8904 6.15673 24.0003 6.15673 24.0003H9.94877L9.94014 15.0671L5 11.4668Z" fill="#4285F4"/>
+            </svg>:botteras@gmail.com </div>
+            <div id="insta"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="5%" height="5%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"/>
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"/>
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"/>
+            <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"/>
+            <defs>
+            <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+            <stop stop-color="#B13589"/>
+            <stop offset="0.79309" stop-color="#C62F94"/>
+            <stop offset="1" stop-color="#8A3AC8"/>
+            </radialGradient>
+            <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+            <stop stop-color="#E0E8B7"/>
+            <stop offset="0.444662" stop-color="#FB8A2E"/>
+            <stop offset="0.71474" stop-color="#E2425C"/>
+            <stop offset="1" stop-color="#E2425C" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+            <stop offset="0.156701" stop-color="#406ADC"/>
+            <stop offset="0.467799" stop-color="#6A45BE"/>
+            <stop offset="1" stop-color="#6A45BE" stop-opacity="0"/>
+            </radialGradient>
+            </defs>
+            </svg>: @bot_tera</div></div>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <p>Privacy Policy | Terms of Service | © 2023 Botterra. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
